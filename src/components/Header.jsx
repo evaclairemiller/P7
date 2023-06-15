@@ -5,11 +5,11 @@ import logo from '../assets/logo.svg'
 
 function Header() {
   return (
-    <header>
-      <img src={logo}></img>
-      <nav>
-        <Link to="/">Acceuil</Link>
-        <Link to="/About">A propos</Link>
+    <header className='kasa-banner'>
+      <Link to="/Home"><img src={logo}></img></Link>
+      <nav className="nav-banner">
+        <Link to="/Home">Acceuil</Link>
+        <Link to="/About">A Propos</Link>
       </nav>
     </header>
   )
