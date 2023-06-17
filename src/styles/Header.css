@@ -3,16 +3,32 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-height: 50px;
-padding-top: 50px;
+text-transform: uppercase;
+font-size: 12px;
+}
+
+.kasa-logo {
+    height: 40px;
 }
 
 .nav-banner {
-    font-weight: 500;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-banner a {
-    padding: 0px 20px;
-    font-size: 18px;
     line-height: 34.22px;
+}
+
+@media only screen and (min-width: 768px) {
+    .kasa-banner {
+        text-transform: none;
+        font-size: 18px;
+    }
+    .kasa-logo {
+        height: 50px;
+    }
+    .nav-banner {
+        gap: 50px;
+    }
 }

@@ -7,4 +7,4 @@ function CoverPhoto() {
   )
 }
 
-export default <CoverPhoto></CoverPhoto>
+export default CoverPhoto

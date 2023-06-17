@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0px 80px;
+  padding: 18px;
   color: #FF6060;
   font-family: "Montserrat", 'Helvetica Neue',
     sans-serif;
@@ -20,4 +20,10 @@ a, a:link, a:visited, a:hover {
 
 a:focus, a:active {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 30px 80px;
+  }
 }
