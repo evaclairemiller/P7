@@ -6,17 +6,18 @@ import HouseTile from '../components/HouseTile'
 import '../styles/Home.css'
 
 function Home() {
+  const coverTextBreak = <p>Chez vous, <span className='text-break'>partout et ailleurs</span></p>
   return (
     <div>
       <CoverPhoto
         photo={photo1}
-        photoText='Chez vous, partout et ailleurs' 
+        coverText={coverTextBreak}
       />
       <ul className='house-tiles'>
         {homesList.map(({ id, title, cover }) => (
           <HouseTile 
             key={id}
-            photo={cover}
+            cover={cover}
             title={title}
           />
         ))}

@@ -1,19 +1,61 @@
 .cover-photo {
     width: 100%;
-    height: 120px;
+    height: 125px;
     border-radius: 12px;
     margin: 12px 0px;
-    background-color: aquamarine;
+    background-size: 100%;
+    background-position: 10% 48%
 }
 
 .cover-photo p {
     color: white;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.text-break::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.cover-photo-gradient {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+}
+
+@media only screen and (min-width: 480px) {
+    .cover-photo-gradient {
+        justify-content: center;
+    }
+    .cover-photo-gradient p {
+        
+        padding: 0px;
+    }
+    .text-break::before {
+        content: none;
+        white-space: auto;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .cover-photo {
         height: 180px;
         border-radius: 28px;
-        margin: 30px 0px;
+        margin: 30px 0px; 
+    }
+    .cover-photo-gradient {
+        border-radius: 28px;
+    }
+    .cover-photo-gradient p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cover-photo p {
+        font-size: 34px;
     }
 }
