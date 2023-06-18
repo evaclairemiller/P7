@@ -1,33 +1,39 @@
-article {
+.error-box {
+    height: 75vh;
+    width: 75%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
     padding-bottom: 40px;
     text-align: center;
 }
 
-figure {
+.error-box figure {
     padding: 120px 0px;
+    margin: 0;
 }
 
-h1 {
+.error-box h1 {
     text-align: center;
     font-size: 100px;    
     margin: 0px;
 }
 
-h2 {
+.error-box h2 {
     font-size: 20px;
 }
 
-article>a, article>a:link, article>a:visited, article>a:hover {
+.error-box>a, .error-box>a:link, .error-box>a:visited, .error-box>a:hover {
     text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
-    h1 {
-        font-size: 180px;
+    .error-box h1 {
+        font-size: 250px;
+    }
+    .error-box h2 {
+        font-size: 34px;
     }
 }

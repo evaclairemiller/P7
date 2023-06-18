@@ -617,3 +617,5 @@ export const homesList = [
 		]
 	}
 ]
+
+export default homesList

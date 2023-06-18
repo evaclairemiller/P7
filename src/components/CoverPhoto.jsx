@@ -1,9 +1,12 @@
 import React from 'react'
 import "../styles/CoverPhoto.css"
 
-function CoverPhoto() {
+function CoverPhoto(photo) {
   return (
-    <figure></figure>
+    <figure className='cover-photo'>
+      <img src={photo}></img>
+      <p>{photo.photoText}</p>
+    </figure>
   )
 }
 
