@@ -1,28 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../styles/HouseTile.css"
 
-function HouseTile({ title, cover }) {
+function HouseTile(house) {
+  console.log(house);
   return (
-    <article 
-      className='house-tile' 
-      style={{
-        backgroundImage: `url(${cover})`,
-        backgroundSize: `150%`,
-        backgroundPosition: `25% 55%`,
-        }}>
-        <div className='house-tile-gradient'
-          style={{
-            background: `linear-gradient(transparent 60%, #333333)`
+    <Link to={'fiche/'+house.id} className='house-tile'>
+      <article className='house-tile-article'
+        style={{
+          backgroundImage: `url(${house.cover})`,
+          backgroundSize: `cover`,
+          backgroundPosition: `25% 55%`,
           }}>
-        {/*<img src={cover}></img>*/}
-        <p className='house-title'>{title}</p>
-        </div>
-    </article>
+          <div className='house-tile-gradient'
+            style={{
+              background: `linear-gradient(transparent 60%, #333333)`
+            }}>
+          <p className='house-title'>{house.title}</p>
+          </div>
+      </article>
+    </Link>
   )
-}
-HouseTile.propTypes = {
-  title: String,
-  cover: String,
 }
 
 export default HouseTile

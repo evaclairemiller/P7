@@ -1,0 +1,10 @@
+.about-page-content {
+    min-height: calc(100vh - 270px);
+}
+
+@media only screen and (min-width: 768px) {
+    .about-page-dropdowns {
+        width: 80%;
+        margin: auto;
+    }
+}

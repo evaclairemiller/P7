@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+p {
+    font-family: 'Montserrat';
+}
+
+.dropdown-bar {
+    width: 100%;
+}
+
+.dropdown-bar-closed, .dropdown-bar-open {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #FF6060;
+    border: none;
+    border-radius: 6px;
+    padding: 0px 14px;
+    font-size: 16px;
+    color: white;
+}
+
+.dropdown-option {
+    list-style-type: none;
+}
+
+.dropdown-options {
+    background-color: rgba(244, 244, 244, 0.781);
+    border-radius: 6px;
+    margin: 0px;
+    padding: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown-bar-closed, .dropdown-bar-open {
+        margin-bottom: 20px;
+    }
+}

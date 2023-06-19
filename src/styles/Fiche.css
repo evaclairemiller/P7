@@ -1,0 +1,110 @@
+.fiche-complet {
+    margin: 20px 0px;
+    min-height: calc(100vh - 220px);
+}
+
+.fiche-cover-photo {
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.fiche-infos {
+    display: flex;
+    flex-direction: row;
+}
+
+.fiche-primary-infos {
+    width: 50%;
+}
+
+.fiche-primary-infos h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.fiche-location {
+    margin-top: 6px;
+}
+
+.tag-option-list {
+    padding: 0;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.tag-item {
+    list-style-type: none;
+    background-color: #FF6060;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 24px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.fiche-secondary-infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fiche-host-infos {
+    display: flex;
+    width: 150px;
+    height: 70px;
+    margin: 0px;
+    align-items: center;
+    gap: 10px;
+}
+
+.fiche-host-name {
+    text-align: right;
+    line-height: 22px;
+}
+
+.fiche-host-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.fiche-rating {
+    margin: 20px 0px;
+}
+
+.fiche-dropdowns .dropdown-bar-closed, .fiche-dropdowns .dropdown-bar-open {
+    margin: 0px;
+}
+
+.fiche-dropdowns .dropdown-option {
+    padding: 6px 0px 20px 0px;
+    line-height: 22px;
+}
+
+.equipment-option-list {
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-option {
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .fiche-dropdowns {
+        display: flex;
+        gap: 40px;
+    }
+}

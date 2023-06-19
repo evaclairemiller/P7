@@ -1,5 +1,5 @@
 .error-box {
-    height: 75vh;
+    min-height: calc(100vh - 280px);
     width: 75%;
     margin: auto;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .error-box figure {
-    padding: 120px 0px;
+    padding: 100px 0px;
     margin: 0;
 }
 

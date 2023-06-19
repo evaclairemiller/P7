@@ -1,12 +1,34 @@
 import React from 'react'
 import CoverPhoto from '../components/CoverPhoto'
+import Dropdown from '../components/Dropdown'
 import photo2 from '../assets/photo2.jpeg'
 import '../styles/About.css'
 
 function About() {
-  return (<CoverPhoto
-    photo={photo2}
-  />
+  return (
+  <section className='about-page-content'>
+    <CoverPhoto
+      photo={photo2}
+    />
+    <article className='about-page-dropdowns'>
+    <Dropdown 
+      subject={`Fiabilité`}
+      option={`Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.`}
+    />
+    <Dropdown
+      subject={`Respect`}
+      option={`La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.`}
+    />
+    <Dropdown
+      subject={`Service`}
+      option={`Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.`}
+    />
+    <Dropdown
+      subject={`Sécurité`}
+      option={`La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.`}
+    />
+    </article>
+  </section>
   )
 }
 

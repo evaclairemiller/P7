@@ -13,15 +13,16 @@ function Home() {
         photo={photo1}
         coverText={coverTextBreak}
       />
-      <ul className='house-tiles'>
+      <section className='house-tiles'>
         {homesList.map(({ id, title, cover }) => (
           <HouseTile 
             key={id}
+            id={id}
             cover={cover}
             title={title}
           />
         ))}
-      </ul>
+      </section>
     </div>
     )
 }
