@@ -49,6 +49,9 @@ function Carousel() {
                 <img src={Arrowback} className='button-prev' onClick={prev}></img>          
                 <img src={Arrowfront} className='button-next' onClick={next}></img>
                 {carouselPhotos}
+                <div className="position">
+                    <p>1/{Photos.length}</p>
+                </div>
             </div>)}
         </section>
     )

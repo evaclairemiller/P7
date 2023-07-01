@@ -12,8 +12,10 @@
 }
 
 #carousel-photo {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .button-next, .button-prev {
@@ -22,17 +24,27 @@
     width: 40px;
 }
 
+.button-prev {
+    left: 0px;
+}
+
 .button-next {
-    right: 20px;
+    right: 0px;
+}
+
+.position {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
 }
 
 .fiche-infos {
     display: flex;
-    flex-direction: row;
-}
-
-.fiche-primary-infos {
-    width: 75%;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
 }
 
 .fiche-primary-infos h1 {
@@ -63,14 +75,15 @@
     padding: 0px 12px;
     height: 24px;
     font-size: 12px;
+    font-weight: 100;
     border-radius: 8px;
 }
 
 .fiche-secondary-infos {
-    width: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .fiche-host-infos {
@@ -79,7 +92,7 @@
     height: 70px;
     margin: 0px;
     align-items: center;
-    gap: 10px;
+    gap: 18px;
 }
 
 .fiche-host-name {
@@ -101,6 +114,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.fiche-dropdowns p {
+    font-size: 18px;
 }
 
 .fiche-dropdowns .dropdown-bar-closed, .fiche-dropdowns .dropdown-bar-open {
@@ -129,6 +146,18 @@
         height: 350px;
         border-radius: 16px;
     }
+    .fiche-infos {
+        flex-direction: row;
+    }
+    .fiche-secondary-infos {
+        width: 75%;
+    }
+    .fiche-secondary-infos {
+        width: 50%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+    }
     .fiche-dropdowns {
         display: flex;
         flex-direction: row;
@@ -139,6 +168,6 @@
         width: 80px;
     }
     .button-next {
-        right: 80px;
+        right: 0px;
     }
 }

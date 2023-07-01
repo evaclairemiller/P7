@@ -23,7 +23,8 @@ font-size: 12px;
 @media only screen and (min-width: 768px) {
     .kasa-banner {
         text-transform: none;
-        font-size: 18px;
+        font-size: 24px;
+        font-weight: 600;
     }
     .kasa-logo-banner {
         height: 55px;
