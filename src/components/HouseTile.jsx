@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import "../styles/HouseTile.css"
 
 function HouseTile(house) {
-  console.log(house);
   return (
     <Link to={'fiche/'+house.id} className='house-tile'>
       <article className='house-tile-article'

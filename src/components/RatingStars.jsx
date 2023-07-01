@@ -1,15 +1,34 @@
-/*import React from 'react'
-import Star from '../assets/star.svg'
+import React from 'react'
+import StarPink from '../assets/star-pink.svg'
+import StarGrey from '../assets/star-grey.svg'
 
 function RatingStars(stars) {
-    const fullStars = (stars.Rating)
 
-    FAIRE DEUX BOUCLES DE 0 JUSQU'A LA NOTE
-    UNE AUTRE 5 JUSAU'A LA NOTE ET ENSUITE DES VIDES
+    let lastElement
+    for (lastElement in stars)
+    (stars[lastElement])
 
+    const fullStars = Array.from({length: (stars[lastElement])})
+    const emptyStars = Array.from({length: (5 - (stars[lastElement]))})
+    
     return (
-        <img src={Star}>{fullStars}</img>
+    <div>
+        {fullStars.map(() => (
+          <img
+            key={stars}
+            src={StarPink}
+          />
+        ))}
+        {emptyStars.map(() => (
+          <img
+            key={stars}
+            src={StarGrey}
+          />
+        ))}
+        
+      </div>
     )
+
 }
 
-export default RatingStars*/
+export default RatingStars
