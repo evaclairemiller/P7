@@ -1,17 +1,23 @@
 .house-tiles {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 20px 0px;
     gap: 20px;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 768px) {
     .house-tiles {
         border-radius: 25px;
         background-color: #F6F6F6;
         padding: 20px 40px;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 12%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .house-tiles {
         gap: 5%;
     }
 }

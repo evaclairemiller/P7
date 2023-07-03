@@ -22,6 +22,7 @@
     position: absolute;
     height: 50px;
     width: 40px;
+    cursor: pointer;
 }
 
 .button-prev {
@@ -43,7 +44,6 @@
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    font-weight: 600;
     letter-spacing: 0.6px;
 }
 
@@ -75,7 +75,6 @@
     padding: 0px 12px;
     height: 24px;
     font-size: 12px;
-    font-weight: 100;
     border-radius: 8px;
 }
 
@@ -148,6 +147,7 @@
     }
     .fiche-infos {
         flex-direction: row;
+        justify-content: space-between;
     }
     .fiche-secondary-infos {
         width: 75%;

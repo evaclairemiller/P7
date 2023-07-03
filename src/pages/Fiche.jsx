@@ -13,12 +13,12 @@ function Fiche() {
 
     const Tags = Logement.tags
     const tagItems = Tags.map((item) =>
-    <li key={Logement.id} className='tag-item'>{item}</li>
+    <li key={item} className='tag-item'>{item}</li>
     );
 
     const Equpiments = Logement.equipments
     const listItems = Equpiments.map((item) =>
-    <li key={Logement.id} className='equipment-option'>{item}</li>
+    <li key={item} className='equipment-option'>{item}</li>
     );
 
     if (!Logement) {return <Error />}
