@@ -5,13 +5,13 @@ import arrowUp from '../assets/arrow-up.png'
 import arrowDown from '../assets/arrow-down.png'
 
 function Dropdown(dropdown) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isNotOpen, IsOpen] = useState(true)
 
-  return isOpen ? (
+  return isNotOpen ? (
     <div className='dropdown-bar-closed'>
       <button 
         className='dropdown-button'
-        onClick={() => setIsOpen(false)}
+        onClick={() => IsOpen(false)}
       >
         <p>{dropdown.subject}</p>
         <img src={arrowDown} className='arrow-down'></img>
@@ -22,7 +22,7 @@ function Dropdown(dropdown) {
       <div className='dropdown-bar-open'>
         <button 
           className='dropdown-button'
-          onClick={() => setIsOpen(true)}
+          onClick={() => IsOpen(true)}
         >
           <p>{dropdown.subject}</p>
           <img src={arrowUp} className='arrow-up'></img>
