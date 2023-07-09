@@ -11,6 +11,8 @@ function Fiche() {
     const {homeId} = useParams()
     const Logement = homesList.filter(log => log.id == homeId)[0] ?? null
 
+    if (!Logement) {return <Error />}
+
     const Tags = Logement.tags
     const tagItems = Tags.map((item) =>
     <li key={item} className='tag-item'>{item}</li>
@@ -20,8 +22,6 @@ function Fiche() {
     const listItems = Equpiments.map((item) =>
     <li key={item} className='equipment-option'>{item}</li>
     );
-
-    if (!Logement) {return <Error />}
 
     return (
         <section className='fiche-complet'>
